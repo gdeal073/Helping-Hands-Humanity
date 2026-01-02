@@ -3,48 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support & Help</title>
+    <title>Together We Can Fight Cancer</title>
     <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; text-align: center; color: #333; }
-        .container { max-width: 500px; background: white; margin: auto; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h2 { color: #d9534f; }
-        .privacy-note { font-style: italic; font-size: 0.9em; color: #666; margin-bottom: 20px; }
-        .details-box { text-align: left; background: #fff5f5; padding: 15px; border-left: 5px solid #d9534f; border-radius: 5px; margin-bottom: 20px; }
-        .qr-section { margin-top: 20px; padding: 15px; border: 2px dashed #bbb; border-radius: 10px; }
-        .qr-placeholder { width: 200px; height: 200px; background: #eee; margin: 10px auto; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; }
-        .donate-btn { display: inline-block; background: #28a745; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 15px; }
-        footer { margin-top: 20px; font-size: 0.8em; color: #888; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; color: #333; }
+        .card { max-width: 450px; background: white; margin: auto; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .header-image { background: linear-gradient(135deg, #d81b60 10%, #f48fb1 100%); padding: 40px 20px; text-align: center; color: white; }
+        .content { padding: 25px; }
+        h2 { margin-top: 0; color: #b02a37; font-size: 24px; text-align: center; }
+        .hospital-tag { display: block; text-align: center; background: #fff3f3; color: #d9534f; padding: 8px 12px; border-radius: 50px; font-size: 0.85em; font-weight: bold; margin-bottom: 15px; border: 1px solid #f5c2c7; }
+        .story { line-height: 1.6; color: #555; font-size: 15px; margin-bottom: 20px; text-align: justify; }
+        .story strong { color: #000; }
+        .qr-container { background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 15px; padding: 20px; text-align: center; margin-top: 10px; }
+        .qr-image { width: 200px; height: auto; border-radius: 10px; margin: 10px 0; border: 1px solid #ddd; }
+        .upi-id { font-family: monospace; background: #fff; padding: 8px 10px; border-radius: 5px; font-size: 14px; border: 1px solid #ccc; color: #d81b60; font-weight: bold; word-break: break-all; display: block; }
+        .footer { text-align: center; padding: 20px; font-size: 13px; color: #777; border-top: 1px solid #eee; }
+        .heart-icon { color: #d9534f; font-size: 20px; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>Help Support a Brave Soul</h2>
-    <p class="privacy-note">*Patient ki privacy ka samman karte hue humne unki tasveer share nahi ki hai.*</p>
-
-    <div class="details-box">
-        <p><strong>Bimari:</strong> Cancer (Treatment Underway)</p>
-        <p><strong>Zaroorat:</strong> Medical bills aur dawaiyon ke liye.</p>
-        <p><strong>Problem:</strong> Parivaar ki arthik sthiti abhi mushkil hai aur hume aapki choti si madad ki badi umeed hai.</p>
+<div class="card">
+    <div class="header-image">
+        <span style="font-size: 50px;">🎗️</span>
+        <h3 style="margin: 10px 0 0;">Umeed ki Ek Kiran</h3>
     </div>
 
-    <p>Aap niche diye gaye QR code ko scan karke direct madad kar sakte hain:</p>
+    <div class="content">
+        <div class="hospital-tag">📍 MNJ Cancer Hospital, Hyderabad</div>
+        <h2>Jung Cancer Ke Khilaf</h2>
+        
+        <p class="story">
+            Zindagi aksar aise mod par khadi kar deti hai jahan apno ka saath hi sabse badi taqat hoti hai. Hyderabad ke <strong>MNJ Cancer Hospital</strong> mein ek jaan-lewa jung ladi ja rahi hai. 
+            <br><br>
+            Patient ki privacy ka samman karte hue hum unki pehchan nahi dikha rahe, magar unka dard aur dawaiyon ka bojh bilkul asli hai. Aapka ek chota sa yogdaan unhe is mushkil waqt se nikal sakta hai.
+        </p>
 
-    <div class="qr-section">
-        <strong>Scan to Donate (UPI)</strong>
-        <div class="qr-placeholder">
-            <p style="padding: 10px;">[Apna UPI QR Code Image Yahan Lagayein]</p>
+        <div class="qr-container">
+            <p style="margin: 0 0 10px; font-weight: bold; color: #444;">Scan to Donate (UPI)</p>
+            
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=s2520974706661874@slc" alt="UPI QR Code" class="qr-image">
+            
+            <p style="margin-bottom: 5px; font-size: 13px; color: #666;">UPI ID:</p>
+            <span class="upi-id">s2520974706661874@slc</span>
         </div>
-        <p><strong>UPI ID:</strong> example@upi</p>
     </div>
 
-    <a href="tel:+910000000000" class="donate-btn">Verify/Contact Us</a>
-
-    <footer>
-        <p>Aapki ek choti si madad kisi ki zindagi badal sakti hai. Dhanyawad.</p>
-    </footer>
+    <div class="footer">
+        Har ek rupaye ki keemat hai. <br>
+        <span class="heart-icon">♥</span> Insaniyat ke liye saath dein.
+    </div>
 </div>
 
 </body>
 </html>
-
